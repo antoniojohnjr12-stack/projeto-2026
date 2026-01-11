@@ -14,27 +14,22 @@
    </script>
    <input type ="text" value="o dia esta lindo?">
    <p id="mensagem3">se o dia estiver lindo click no butão abaixo de você</p>
-         <input type="text" id="msg" placeholder="olá bem vindo a sengunda pagina.">
-         <button onclick="enviar()">ir para outra pagina</button>
-         <script>
-            function enviar() {
-                  const mensagem = document.getElementById("msg").value;
-                  localStorage.setItem("mensagem", mensagem);
-                  window.location.href = "pagina2.html";
-            }
-         </script>
-         <link rel="stylesheet" href="aula.css">
+         <link rel="stulysheet" href="aula.css">
+</html>
+
 </body>
 </html>
 <!DOCTYPE html>
 <html> 
-      <head>
-            <p id="text"></p>
-            <script>
-                  document.getElementById("text").innerHTML = localStorage.getItem("mensagem");
-            </script>
-      </head>
 
+    <head>
+        <meta charset = "utf-8">
+        <title>segunda pagina primeiro programa</title>
+    </head>
+    <body>
+        <a href="sobre.html" target="_self">
+            Ir para a página sobre!</a>
+        </a>
+    </body>
 </html>
-
 
