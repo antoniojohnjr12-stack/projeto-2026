@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"meu primeiro programa"</title>
+</head>
+<body>
+   <p id="mensagem">olá</p>
+   <div data-nome="joao" data-idade="18"></div>
+   <p id="mensagem2">mundo!</p>
+   <script>
+         document.getElementById("mensagem").innerHTML = "meu primeiro programa html";
+   </script>
+   <input type ="text" value="o dia esta lindo?">
+   <p id="mensagem3">se o dia estiver lindo click no butão abaixo de você</p>
+         <input type="text" id="msg" placeholder="olá bem vindo a sengunda pagina.">
+         <button onclick="enviar()">ir para outra pagina</button>
+         <script>
+            function enviar() {
+                  const mensagem = document.getElementById("msg").value;
+                  localStorage.setItem("mensagem", mensagem);
+                  window.location.href = "pagina2.html";
+            }
+         </script>
+         <link rel="stylesheet" href="aula.css">
+</body>
+</html>
+<!DOCTYPE html>
+<html> 
+      <head>
+            <p id="text"></p>
+            <script>
+                  document.getElementById("text").innerHTML = localStorage.getItem("mensagem");
+            </script>
+      </head>
+
+</html>
+
+

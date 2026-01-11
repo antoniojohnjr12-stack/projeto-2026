@@ -1,0 +1,15 @@
+root {
+    --cor-principal:#1a0bba;
+    --cor-segundaria:#A020F0;
+    --cor-fundo:#20B2AA;
+    --tamanho-fonte:18px;
+}
+p {
+    color:var(--cor-principal);
+    font-family:var(--fonte-padarao);
+    font-size:var(--tamanho-texto);
+}
+h1 {
+    color:var(--cor-segundaria);
+    font-family:var(--fonte-titulos);
+}
